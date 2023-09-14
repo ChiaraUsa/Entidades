@@ -28,7 +28,6 @@ function registrarIntermediario(){
 
                 success: function(rta) {
                     localStorage.email = datos.email
-                    Cookies.set("token",rta['token']);
                     window.location.replace("editarInfoIntermediario.html");
                 },
                 error: function(xhr, status) {
@@ -65,7 +64,6 @@ function registrarAdministrador(){
 
                 success: function(rta) {
                     localStorage.email = datos.email
-                    Cookies.set("token",rta['token']);
                     window.location.replace("editarInfoAdministrador.html");
                 },
                 error: function(xhr, status) {
