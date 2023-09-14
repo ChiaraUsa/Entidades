@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/estilousu.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Crea tu perfil de Usuario</h1>
+        <div>
+            <input type="text" id="txtNombre" placeholder="Nombre">
+            <input type="text" id="txtEmail" placeholder="Email">
+            <input type="password" id="txtContraseña" placeholder="Contraseña">
+            <input type="password" id="txtRepiteContraseña" placeholder="Confirmar Contraseña">
+            <button type="button" onclick="registrar()">Registrarse</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('txtRol').addEventListener('change', function () {
+            var codigoInput = document.getElementById('txtCodigo');
+            if (this.value === 'administrador') {
+                codigoInput.style.display = 'block';
+            } else {
+                codigoInput.style.display = 'none';
+            }
+        });
+    </script>
+    
+     <script src="js/usuario/registrarusu.js"></script>
+
+</body>
+</html>
