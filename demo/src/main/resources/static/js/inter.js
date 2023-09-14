@@ -9,7 +9,7 @@ $.ajax({
     url:"/api/inter/registrar",
     type:"POST",
     dataType:"json",
-
+    contentType:"application/json",
     data:JSON.stringify(datos),
 
     success: function(rta) {
