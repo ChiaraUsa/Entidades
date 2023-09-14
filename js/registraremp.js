@@ -29,7 +29,7 @@ $(document).ready(function() {
              success: function(rta) {
                  localStorage.email = datos.email
                  Cookies.set("token",rta['token']);
-                 window.location.replace("login.html");
+                 window.location.replace("editaremp.html");
              },
              error: function(xhr, status) {
                  alert('Disculpe, existió un problema');
