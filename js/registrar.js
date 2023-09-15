@@ -3,7 +3,7 @@ $(document).ready(function() {
     // on ready
   });
   
-function registrarEmpresa(){
+function registrarIntermediario(){
     let datos = {}
 
     datos.firstname = document.querySelector('#txtNombre').value
@@ -29,7 +29,7 @@ function registrarEmpresa(){
                 success: function(rta) {
                     localStorage.email = datos.email
                     Cookies.set("token",rta['token']);
-                    window.location.replace("inicio.html");
+                    window.location.replace("editarInfoIntermediario.html");
                 },
                 error: function(xhr, status) {
                     alert('Disculpe, existió un problema');
@@ -66,7 +66,7 @@ function registrarAdministrador(){
                 success: function(rta) {
                     localStorage.email = datos.email
                     Cookies.set("token",rta['token']);
-                    window.location.replace("inicio.html");
+                    window.location.replace("editarInfoAdministrador.html");
                 },
                 error: function(xhr, status) {
                     alert('Disculpe, existió un problema');

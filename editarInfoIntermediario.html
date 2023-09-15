@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil de Intermediario</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/estiloInfo2.css">
+</head>
+<body>
+<div class="container">
+    <h1>Mi Perfil de Empresa</h1>
+    <input type="text" id="txtNombre" class="profile-input" value="Nombre" disabled>
+    <input type="text" id="txtID" class="profile-input" value="ID" disabled>
+    <input type="text" id="txtCorreo" class="profile-input" value="Correo" disabled>
+    <div class="action-buttons">
+        <button class="delete-button" onclick="eliminarPerfil()">Eliminar</button>
+        <button class="edit-button" onclick="editarPerfil()">Editar</button>
+        <button class="save-button" onclick="guardarPerfil()" disabled>Guardar</button>
+    </div>
+</div>
+
+<script src="js/info.js"></script>
+</body>
+</html>
